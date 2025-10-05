@@ -22,17 +22,10 @@ int main(int argc, char** argv) {
     //Timer of OS
     int current_time = 0;
 
-    //Track kernel mode (REMOVE LATER IF NOT USED)
-    bool kernel_mode = false;
-
     // Constants
     int context_save_time = 10;
     int isr_activity_time = 40;
     int negligible_time = 1;
-
-    // Device tracking (REMOVE LATER IF NOT USED)
-    std::vector<bool> device_busy;
-    std::vector<int> device_completion_time;
     /******************************************************************/
 
     //parse each line of the input trace file
@@ -50,16 +43,16 @@ int main(int argc, char** argv) {
             current_time = current_time_return;
 
             // Execute ISR Body
-            int remaining_time = delays.at(duration_intr);
+            int remaining_time = delays.at(duration_intr-1);
 
             while (remaining_time >= isr_activity_time) {
-                execution += std::to_string(current_time) + ", " + std::to_string(isr_activity_time) + ", " + activity + ": ran ISR Activity for device " + std::to_string(duration_intr + 1) + "\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(isr_activity_time) + ", " + activity + ": ran ISR Activity for device " + std::to_string(duration_intr) + "\n";
                 current_time += isr_activity_time;
                 remaining_time -= isr_activity_time;
             }
 
             if (remaining_time > 0){
-                execution += std::to_string(current_time) + ", " + std::to_string(remaining_time) + ", " + activity + ": remaining delay for device " + std::to_string(duration_intr + 1) + "\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(remaining_time) + ", " + activity + ": remaining delay for device " + std::to_string(duration_intr) + "\n";
                 current_time += remaining_time;
             }
         

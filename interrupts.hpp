@@ -124,7 +124,7 @@ std::pair<std::string, int> intr_boilerplate(int current_time, int intr_num , in
     current_time += negligible_time;
 
     // Get ISR address from vector table
-    execution += std::to_string(current_time) + ", " + std::to_string(negligible_time) + ", load address " + vectors.at(intr_num) + " into the PC\n";
+    execution += std::to_string(current_time) + ", " + std::to_string(negligible_time) + ", load address " + vectors.at(intr_num-1) + " into the PC\n";
     current_time += negligible_time;
 
 
