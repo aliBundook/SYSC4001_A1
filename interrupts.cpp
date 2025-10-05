@@ -61,33 +61,7 @@ int main(int argc, char** argv) {
             current_time += negligible_time;
             
         }
-
-        else if(activity == "END_IO"){
-            auto[execution_return, current_time_return] = intr_boilerplate(current_time, duration_intr, context_save_time, negligible_time ,vectors);
-            execution += execution_return;
-            current_time = current_time_return;
-
-            // Execute ISR Body
-            int remaining_time = 0;
-            for (int i = delays.at(duration_intr); i<isr_activity_time; i-=isr_activity_time){ // Loop to simulate multiple lines in ISR body if needed
-                execution += std::to_string(current_time) + ", " + std::to_string(delays.at(duration_intr)) + ", END_IO : ran ISR Execution for device " + std::to_string(duration_intr) + "\n";
-                current_time += isr_activity_time;
-                if (i< isr_activity_time){
-                    remaining_time = i;
-                }
-            }
-
-            if (remaining_time > 0){
-                execution += std::to_string(current_time) + ", " + std::to_string(remaining_time) + ", END_IO : remaining delay for device " + std::to_string(duration_intr) + "\n";
-                current_time += remaining_time;
-            }
         
-            // Execute IRET
-            execution += std::to_string(current_time) + ", " + std::to_string(negligible_time) + ", IRET Execution\n"; //Switch Back to User Mode
-            current_time += negligible_time;
-        }
-
-
         /************************************************************************/
 
     }
