@@ -53,13 +53,13 @@ int main(int argc, char** argv) {
             int remaining_time = delays.at(duration_intr);
 
             while (remaining_time >= isr_activity_time) {
-                execution += std::to_string(current_time) + ", " + std::to_string(isr_activity_time) + ", " + activity + ": ran ISR Activity for device " + std::to_string(duration_intr) + "\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(isr_activity_time) + ", " + activity + ": ran ISR Activity for device " + std::to_string(duration_intr + 1) + "\n";
                 current_time += isr_activity_time;
                 remaining_time -= isr_activity_time;
             }
 
             if (remaining_time > 0){
-                execution += std::to_string(current_time) + ", " + std::to_string(remaining_time) + ", " + activity + ": remaining delay for device " + std::to_string(duration_intr) + "\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(remaining_time) + ", " + activity + ": remaining delay for device " + std::to_string(duration_intr + 1) + "\n";
                 current_time += remaining_time;
             }
         
