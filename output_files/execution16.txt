@@ -1,0 +1,141 @@
+0, 96, CPU Burst
+96, 1, switch to kernel mode
+97, 10, context saved
+107, 1, find vector 3 in memory position 0x0006
+108, 1, load address 0X0695 into the PC
+109, 40, SYSCALL: ran ISR Activity for device 3
+149, 40, SYSCALL: ran ISR Activity for device 3
+189, 40, SYSCALL: ran ISR Activity for device 3
+229, 30, SYSCALL: remaining delay for device 3
+259, 1, IRET Execution
+260, 10, CPU Burst
+270, 1, switch to kernel mode
+271, 10, context saved
+281, 1, find vector 3 in memory position 0x0006
+282, 1, load address 0X0695 into the PC
+283, 40, END_IO: ran ISR Activity for device 3
+323, 40, END_IO: ran ISR Activity for device 3
+363, 40, END_IO: ran ISR Activity for device 3
+403, 30, END_IO: remaining delay for device 3
+433, 1, IRET Execution
+434, 49, CPU Burst
+483, 1, switch to kernel mode
+484, 10, context saved
+494, 1, find vector 7 in memory position 0x000E
+495, 1, load address 0X0639 into the PC
+496, 40, SYSCALL: ran ISR Activity for device 7
+536, 40, SYSCALL: ran ISR Activity for device 7
+576, 40, SYSCALL: ran ISR Activity for device 7
+616, 40, SYSCALL: ran ISR Activity for device 7
+656, 40, SYSCALL: ran ISR Activity for device 7
+696, 40, SYSCALL: ran ISR Activity for device 7
+736, 25, SYSCALL: remaining delay for device 7
+761, 1, IRET Execution
+762, 73, CPU Burst
+835, 1, switch to kernel mode
+836, 10, context saved
+846, 1, find vector 7 in memory position 0x000E
+847, 1, load address 0X0639 into the PC
+848, 40, END_IO: ran ISR Activity for device 7
+888, 40, END_IO: ran ISR Activity for device 7
+928, 40, END_IO: ran ISR Activity for device 7
+968, 40, END_IO: ran ISR Activity for device 7
+1008, 40, END_IO: ran ISR Activity for device 7
+1048, 40, END_IO: ran ISR Activity for device 7
+1088, 25, END_IO: remaining delay for device 7
+1113, 1, IRET Execution
+1114, 109, CPU Burst
+1223, 1, switch to kernel mode
+1224, 10, context saved
+1234, 1, find vector 1 in memory position 0x0002
+1235, 1, load address 0X01E3 into the PC
+1236, 40, SYSCALL: ran ISR Activity for device 1
+1276, 40, SYSCALL: ran ISR Activity for device 1
+1316, 30, SYSCALL: remaining delay for device 1
+1346, 1, IRET Execution
+1347, 34, CPU Burst
+1381, 1, switch to kernel mode
+1382, 10, context saved
+1392, 1, find vector 1 in memory position 0x0002
+1393, 1, load address 0X01E3 into the PC
+1394, 40, END_IO: ran ISR Activity for device 1
+1434, 40, END_IO: ran ISR Activity for device 1
+1474, 30, END_IO: remaining delay for device 1
+1504, 1, IRET Execution
+1505, 48, CPU Burst
+1553, 1, switch to kernel mode
+1554, 10, context saved
+1564, 1, find vector 13 in memory position 0x001A
+1565, 1, load address 0X03B9 into the PC
+1566, 40, SYSCALL: ran ISR Activity for device 13
+1606, 40, SYSCALL: ran ISR Activity for device 13
+1646, 40, SYSCALL: ran ISR Activity for device 13
+1686, 25, SYSCALL: remaining delay for device 13
+1711, 1, IRET Execution
+1712, 35, CPU Burst
+1747, 1, switch to kernel mode
+1748, 10, context saved
+1758, 1, find vector 13 in memory position 0x001A
+1759, 1, load address 0X03B9 into the PC
+1760, 40, END_IO: ran ISR Activity for device 13
+1800, 40, END_IO: ran ISR Activity for device 13
+1840, 40, END_IO: ran ISR Activity for device 13
+1880, 25, END_IO: remaining delay for device 13
+1905, 1, IRET Execution
+1906, 70, CPU Burst
+1976, 1, switch to kernel mode
+1977, 10, context saved
+1987, 1, find vector 20 in memory position 0x0028
+1988, 1, load address 0X0765 into the PC
+1989, 40, SYSCALL: ran ISR Activity for device 20
+2029, 40, SYSCALL: ran ISR Activity for device 20
+2069, 40, SYSCALL: ran ISR Activity for device 20
+2109, 40, SYSCALL: ran ISR Activity for device 20
+2149, 40, SYSCALL: ran ISR Activity for device 20
+2189, 40, SYSCALL: ran ISR Activity for device 20
+2229, 40, SYSCALL: ran ISR Activity for device 20
+2269, 40, SYSCALL: ran ISR Activity for device 20
+2309, 40, SYSCALL: ran ISR Activity for device 20
+2349, 40, SYSCALL: ran ISR Activity for device 20
+2389, 40, SYSCALL: ran ISR Activity for device 20
+2429, 40, SYSCALL: ran ISR Activity for device 20
+2469, 40, SYSCALL: ran ISR Activity for device 20
+2509, 40, SYSCALL: ran ISR Activity for device 20
+2549, 40, SYSCALL: ran ISR Activity for device 20
+2589, 40, SYSCALL: ran ISR Activity for device 20
+2629, 12, SYSCALL: remaining delay for device 20
+2641, 1, IRET Execution
+2642, 11, CPU Burst
+2653, 1, switch to kernel mode
+2654, 10, context saved
+2664, 1, find vector 20 in memory position 0x0028
+2665, 1, load address 0X0765 into the PC
+2666, 40, END_IO: ran ISR Activity for device 20
+2706, 40, END_IO: ran ISR Activity for device 20
+2746, 40, END_IO: ran ISR Activity for device 20
+2786, 40, END_IO: ran ISR Activity for device 20
+2826, 40, END_IO: ran ISR Activity for device 20
+2866, 40, END_IO: ran ISR Activity for device 20
+2906, 40, END_IO: ran ISR Activity for device 20
+2946, 40, END_IO: ran ISR Activity for device 20
+2986, 40, END_IO: ran ISR Activity for device 20
+3026, 40, END_IO: ran ISR Activity for device 20
+3066, 40, END_IO: ran ISR Activity for device 20
+3106, 40, END_IO: ran ISR Activity for device 20
+3146, 40, END_IO: ran ISR Activity for device 20
+3186, 40, END_IO: ran ISR Activity for device 20
+3226, 40, END_IO: ran ISR Activity for device 20
+3266, 40, END_IO: ran ISR Activity for device 20
+3306, 12, END_IO: remaining delay for device 20
+3318, 1, IRET Execution
+3319, 70, CPU Burst
+3389, 1, switch to kernel mode
+3390, 10, context saved
+3400, 1, find vector 10 in memory position 0x0014
+3401, 1, load address 0X036C into the PC
+3402, 40, SYSCALL: ran ISR Activity for device 10
+3442, 40, SYSCALL: ran ISR Activity for device 10
+3482, 40, SYSCALL: ran ISR Activity for device 10
+3522, 36, SYSCALL: remaining delay for device 10
+3558, 1, IRET Execution
+3559, 60, CPU Burst

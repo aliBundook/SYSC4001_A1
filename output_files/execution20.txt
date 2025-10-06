@@ -1,0 +1,67 @@
+0, 101, CPU Burst
+101, 1, switch to kernel mode
+102, 10, context saved
+112, 1, find vector 6 in memory position 0x000C
+113, 1, load address 0X048B into the PC
+114, 40, SYSCALL: ran ISR Activity for device 6
+154, 40, SYSCALL: ran ISR Activity for device 6
+194, 40, SYSCALL: ran ISR Activity for device 6
+234, 40, SYSCALL: ran ISR Activity for device 6
+274, 40, SYSCALL: ran ISR Activity for device 6
+314, 11, SYSCALL: remaining delay for device 6
+325, 1, IRET Execution
+326, 81, CPU Burst
+407, 1, switch to kernel mode
+408, 10, context saved
+418, 1, find vector 6 in memory position 0x000C
+419, 1, load address 0X048B into the PC
+420, 40, END_IO: ran ISR Activity for device 6
+460, 40, END_IO: ran ISR Activity for device 6
+500, 40, END_IO: ran ISR Activity for device 6
+540, 40, END_IO: ran ISR Activity for device 6
+580, 40, END_IO: ran ISR Activity for device 6
+620, 11, END_IO: remaining delay for device 6
+631, 1, IRET Execution
+632, 114, CPU Burst
+746, 1, switch to kernel mode
+747, 10, context saved
+757, 1, find vector 11 in memory position 0x0016
+758, 1, load address 0X07B0 into the PC
+759, 40, SYSCALL: ran ISR Activity for device 11
+799, 40, SYSCALL: ran ISR Activity for device 11
+839, 40, SYSCALL: ran ISR Activity for device 11
+879, 40, SYSCALL: ran ISR Activity for device 11
+919, 40, SYSCALL: ran ISR Activity for device 11
+959, 40, SYSCALL: ran ISR Activity for device 11
+999, 40, SYSCALL: ran ISR Activity for device 11
+1039, 40, SYSCALL: ran ISR Activity for device 11
+1079, 40, SYSCALL: ran ISR Activity for device 11
+1119, 40, SYSCALL: ran ISR Activity for device 11
+1159, 40, SYSCALL: ran ISR Activity for device 11
+1199, 40, SYSCALL: ran ISR Activity for device 11
+1239, 40, SYSCALL: ran ISR Activity for device 11
+1279, 40, SYSCALL: ran ISR Activity for device 11
+1319, 4, SYSCALL: remaining delay for device 11
+1323, 1, IRET Execution
+1324, 58, CPU Burst
+1382, 1, switch to kernel mode
+1383, 10, context saved
+1393, 1, find vector 11 in memory position 0x0016
+1394, 1, load address 0X07B0 into the PC
+1395, 40, END_IO: ran ISR Activity for device 11
+1435, 40, END_IO: ran ISR Activity for device 11
+1475, 40, END_IO: ran ISR Activity for device 11
+1515, 40, END_IO: ran ISR Activity for device 11
+1555, 40, END_IO: ran ISR Activity for device 11
+1595, 40, END_IO: ran ISR Activity for device 11
+1635, 40, END_IO: ran ISR Activity for device 11
+1675, 40, END_IO: ran ISR Activity for device 11
+1715, 40, END_IO: ran ISR Activity for device 11
+1755, 40, END_IO: ran ISR Activity for device 11
+1795, 40, END_IO: ran ISR Activity for device 11
+1835, 40, END_IO: ran ISR Activity for device 11
+1875, 40, END_IO: ran ISR Activity for device 11
+1915, 40, END_IO: ran ISR Activity for device 11
+1955, 4, END_IO: remaining delay for device 11
+1959, 1, IRET Execution
+1960, 66, CPU Burst

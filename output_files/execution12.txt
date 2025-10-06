@@ -1,0 +1,25 @@
+0, 54, CPU Burst
+54, 1, switch to kernel mode
+55, 10, context saved
+65, 1, find vector 6 in memory position 0x000C
+66, 1, load address 0X048B into the PC
+67, 40, SYSCALL: ran ISR Activity for device 6
+107, 40, SYSCALL: ran ISR Activity for device 6
+147, 40, SYSCALL: ran ISR Activity for device 6
+187, 40, SYSCALL: ran ISR Activity for device 6
+227, 40, SYSCALL: ran ISR Activity for device 6
+267, 11, SYSCALL: remaining delay for device 6
+278, 1, IRET Execution
+279, 96, CPU Burst
+375, 1, switch to kernel mode
+376, 10, context saved
+386, 1, find vector 6 in memory position 0x000C
+387, 1, load address 0X048B into the PC
+388, 40, END_IO: ran ISR Activity for device 6
+428, 40, END_IO: ran ISR Activity for device 6
+468, 40, END_IO: ran ISR Activity for device 6
+508, 40, END_IO: ran ISR Activity for device 6
+548, 40, END_IO: ran ISR Activity for device 6
+588, 11, END_IO: remaining delay for device 6
+599, 1, IRET Execution
+600, 114, CPU Burst
